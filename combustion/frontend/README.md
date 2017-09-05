@@ -1,3 +1,14 @@
+Angular Twitter App - Client side authentication
+
+This repository contains the frontend for the app. 
+
+To get started, 
+
+1. Clone the repo
+2. npm install
+3. ng serve or npm start
+
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.

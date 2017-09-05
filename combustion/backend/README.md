@@ -1,6 +1,6 @@
-Angular Twitter App
+Angular Twitter App - Server side authentication
 
-This repository contains the backend for the app.
+This repository contains the backend for the app. 
 
 To get started, 
 
