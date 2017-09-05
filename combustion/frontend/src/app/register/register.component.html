@@ -1,0 +1,35 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>
+        <input [ngClass]="{'error': isValid('firstName')}" type="text" placeholder="First name" formControlName="firstName">
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>
+        <input [ngClass]="{'error': isValid('lastName')}"type="text" placeholder="Last name" formControlName="lastName">
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>
+        <input [ngClass]="{'error': isValid('email')}"type="email" placeholder="Email" formControlName="email">
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>
+        <input [ngClass]="{'error': isValid('password')}"type="password" placeholder="Password" formControlName="password">
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>
+        <input [ngClass]="{'error': isValid('confirmPassword')}"type="password" placeholder="Confirm password" formControlName="confirmPassword">
+      </label>
+    </div>
+    <span *ngIf="form.errors?.mismatchedFields">Passwords do not match</span>
+  </div>
+  <button class="hollow button">Register</button>
+</form>

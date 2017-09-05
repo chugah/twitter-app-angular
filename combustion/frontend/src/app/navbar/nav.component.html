@@ -1,0 +1,8 @@
+<div>
+	<button class="hollow button" routerLink="/">Message Board</button>
+	<button class="hollow button" routerLink="/messages">Messages</button>
+	<button *ngIf="!auth.isAuthenticated" class="hollow button" routerLink="/login">Login</button>
+	<button *ngIf="!auth.isAuthenticated" class="hollow button" routerLink="/register">Register</button>
+	<button *ngIf="auth.isAuthenticated" class="hollow button" routerLink="/">Welcome {{ auth.name }}</button>
+	<button *ngIf="auth.isAuthenticated" class="hollow button" (click)="auth.logout()">Logout</button>
+</div>

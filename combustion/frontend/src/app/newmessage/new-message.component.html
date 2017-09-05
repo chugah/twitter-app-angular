@@ -1,0 +1,15 @@
+<div>
+	<div class="card">
+		<div class="card-divider">
+			<label>
+				<input [(ngModel)]="message.owner" mdInput type="text" placeholder="Name">
+			</label>
+		</div>
+		<div class="card-section">
+			<label>
+				<textarea [(ngModel)]="message.text"mdInput placeholder="Message"></textarea>
+			</label>
+		</div>
+		<button (click)="post()" type="button" class="button primary">POST</button>
+	</div>
+</div>	

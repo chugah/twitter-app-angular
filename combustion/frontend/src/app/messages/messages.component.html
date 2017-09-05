@@ -1,0 +1,11 @@
+<div>
+	<h3>Messages</h3>
+	<div class="card" *ngFor="let message of webService.messages | async">
+		<div class="card-divider">
+			<p [routerLink]="['/messages', message.owner]" class="pointer">{{ message.owner }}</p>
+		</div>
+		<div class="card-section">
+			<p>{{ message.text }}</p>
+		</div>
+	</div>	
+</div>
